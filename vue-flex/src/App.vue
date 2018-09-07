@@ -19,15 +19,16 @@ export default {
 <style lang="scss" scoped>
 
 @import "../static/css/reset.css";
+
 @mixin font-dpr($font-size){
-     　font-size: $font-size;
-       [data-dpr="2"] & {
-           font-size: $font-size * 2;
-       } 
-       [data-dpr="3"] & {
-           font-size: $font-size * 3;
-       }
-   }
+    font-size: $font-size;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    } 
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+};
 .container{
     background-color: #050658;
     width: 100%;
